@@ -1,0 +1,26 @@
+.btn {
+  border: 0;
+  width: 200px;
+  height: 50px;
+  background-color: $blue-color;
+  color: $white-color;
+  /* font-family: var(--main-font); */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.hero__btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+.newsletter__btn {
+  align-self: flex-end;
+  display: flex;
+}

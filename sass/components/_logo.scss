@@ -1,0 +1,20 @@
+.logo {
+  margin-right: 93px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: $main-color;
+}
+.logo--accent {
+  color: $blue-color;
+}
+.logo--white {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  color: $white-color;
+}
