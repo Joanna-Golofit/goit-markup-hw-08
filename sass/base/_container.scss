@@ -1,38 +1,69 @@
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
+  // background-color: red;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
-  
-  .why-us & {
-    display: flex;
-  }
-  .our-team &,
-  .our-offer & {
-    display: flex;
-    flex-direction: column;
-  }
-  .header & {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ececec;
-  }  
-  .hero & {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .contact-us & {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-  }
-  .portfolio & {
   display: flex;
+}
+
+.hero .container{
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+// .container {
+//   width: 1200px;
+//   padding: 0 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   align-items: center;
+
+// .hero & {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//   }
+//   .why-us & {
+//     display: flex;
+//   }
+//   .our-team &,
+//   .our-offer & {
+//     display: flex;
+//     flex-direction: column;
+//   }
+//   .header & {
+//     display: flex;
+//     justify-content: space-between;
+//     border-bottom: 1px solid #ececec;
+//   }
+//   .contact-us & {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     display: flex;
+//     align-items: baseline;
+//     justify-content: space-between;
+//   }
+//   .portfolio & {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   }
+// }
