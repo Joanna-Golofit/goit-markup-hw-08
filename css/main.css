@@ -510,6 +510,21 @@ input {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .article {
+    display: flex;
+  }
+  .article__text {
+    width: 270px;
+  }
+  .article__icon {
+    width: 270px;
+  }
+  .article__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .offer {
   display: flex;
   justify-content: space-between;

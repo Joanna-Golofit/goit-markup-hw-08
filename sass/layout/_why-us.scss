@@ -25,6 +25,7 @@
   }
   .article__header {
     // margin-left: calc(100vw - 15px);
+    // to do poprawy - moe flexem i align self?
     margin-left: 35vw;
   }
 }
@@ -32,20 +33,34 @@
   .article {
     display: flex;
     flex-wrap: wrap;
-  }
-  .article__text {
-    width: 354px;
-  }
-  .article__icon {
-    width: 354px;
-  }
-  .article__item:nth-child(odd) {
-    margin-right: 30px;
+  
+    &__text {
+      width: 354px;
+    }
+    &__icon {
+      width: 354px;
+    }
+    &__item:nth-child(odd) {
+      margin-right: 30px;
+    }
   }
 }
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
 
+  .article {
+    display: flex;
 
+    &__text {
+      width: 270px;
+    }
+    &__icon {
+      width: 270px;
+    }
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
 
 // .article {
 //   display: flex;
