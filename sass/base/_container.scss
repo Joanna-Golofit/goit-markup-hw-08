@@ -4,12 +4,17 @@
   // background-color: red;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+  
 }
 
 .hero .container{
+  display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.why-us .container{
+  display: flex;
 }
 
 @media screen and (min-width: 480px) {
