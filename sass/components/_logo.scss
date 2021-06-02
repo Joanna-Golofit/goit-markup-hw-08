@@ -1,7 +1,7 @@
 .logo {
-  margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  // margin-right: 93px;
+  // margin-top: 24px;
+  // margin-bottom: 25px;
   font-family: $secondary-font;
   font-weight: 700;
   font-size: 26px;
@@ -17,4 +17,20 @@
   margin-bottom: 20px;
   margin-top: 0px;
   color: $white-color;
+}
+
+@media screen and (min-width: 480px) {
+  .logo.logo--white {    
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }  
+}
+@media screen and (min-width: 768px) {}
+@media screen and (min-width: 1200px) {
+  .logo {
+  margin-right: 93px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  }
 }

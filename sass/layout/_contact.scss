@@ -59,6 +59,7 @@ color: $white-color;
   height: 50px;
   margin-right: 12px;
   margin-top: 20px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -69,15 +70,24 @@ color: $white-color;
 }
 
 @media screen and (min-width: 480px) {
-  .addresses {
-    // margin-right: 70px;
+  .newsletter__form {
+    display: flex;
+    justify-content: center;
   }
-  .address {
-    
+  .newsletter__label {
+    text-align: center;
+  }
+  .join-us {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .address__item {
+    text-align: center;
   }
   .newsletter__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .newsletter__email {
     width: 450px;
@@ -92,6 +102,7 @@ color: $white-color;
   }
   .newsletter__email {
     width: 358px;
+    margin-right: 12px;
   }
 }
 
