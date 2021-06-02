@@ -94,15 +94,33 @@ color: $white-color;
   }
 }
 @media screen and (min-width: 768px) {
-
+  .newsletter__wrapper {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+  }
+  .newsletter {
+    margin-top: 60px;
+  }
+   .join-us {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .newsletter {
-    margin-left: 70px;
-  }
   .newsletter__email {
     width: 358px;
     margin-right: 12px;
+  }
+   .newsletter__label {
+    text-align: left;
+  }
+  .newsletter__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .address__item {
+    text-align: left;
   }
 }
 

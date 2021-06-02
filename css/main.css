@@ -84,6 +84,10 @@ input {
   .container {
     max-width: 768px;
   }
+  .contact-us .container {
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -156,6 +160,9 @@ input {
     margin-top: 24px;
     margin-bottom: 25px;
   }
+  .logo.logo--white {
+    text-align: left;
+  }
 }
 
 .backdrop {
@@ -197,6 +204,7 @@ input {
 }
 
 .newsletter__btn {
+  align-self: center;
   display: flex;
 }
 
@@ -296,6 +304,9 @@ input {
     font-size: 36px;
     line-height: 1.167;
     margin-bottom: 50px;
+  }
+  .join-us__header {
+    text-align: left;
   }
 }
 
@@ -846,13 +857,34 @@ input {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .newsletter {
-    margin-left: 70px;
+@media screen and (min-width: 768px) {
+  .newsletter__wrapper {
+    display: flex;
+    flex-direction: column;
   }
+  .newsletter {
+    margin-top: 60px;
+  }
+  .join-us {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .newsletter__email {
     width: 358px;
     margin-right: 12px;
+  }
+  .newsletter__label {
+    text-align: left;
+  }
+  .newsletter__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .address__item {
+    text-align: left;
   }
 }
 
