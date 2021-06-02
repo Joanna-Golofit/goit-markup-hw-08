@@ -39,6 +39,11 @@
     justify-content: space-around; 
     align-items: baseline;
   }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
