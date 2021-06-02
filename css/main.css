@@ -231,11 +231,32 @@ input {
 
 .section-header {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .section-header {
+    font-size: 28px;
+    line-height: 1.172;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-header {
+    font-size: 28px;
+    line-height: 1.172;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-header {
+    font-size: 36px;
+    line-height: 1.167;
+    margin-bottom: 50px;
+  }
 }
 
 .btn-close {
@@ -639,7 +660,6 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -653,6 +673,28 @@ input {
 .customers__link:hover, .customers__link:focus {
   border: 1px solid #2196f3;
   color: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .customers {
+    flex-wrap: wrap;
+  }
+  .customers__link {
+    width: 210px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers__link {
+    width: 170px;
+  }
 }
 
 .addresses {

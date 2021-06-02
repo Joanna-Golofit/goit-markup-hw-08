@@ -19,13 +19,33 @@
   padding-top: 30px;
 }
 .section-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-weight: 700;  
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }
+
+@media screen and (min-width: 480px) {
+  .section-header {
+    font-size: 28px;
+    line-height: 1.172;    
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+   .section-header {
+    font-size: 28px;
+    line-height: 1.172;    
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-header {
+    font-size: 36px;
+    line-height: 1.167;    
+    margin-bottom: 50px;
+  }
+}
+
 // .main-header {
 //   color: $white-color;
 //   font-weight: 900;
