@@ -1,7 +1,9 @@
 .filters {
   display: flex;
   justify-content: space-between;
-  width: 572px;
+  flex-wrap: wrap;
+  // width: 572px;
+  width: 100%;
   margin-bottom: 50px;
 }
 .filters__btn {
@@ -86,6 +88,7 @@
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
+  width: 100%;
 
   &:hover,
   &:focus {
@@ -102,3 +105,22 @@
 
 
 /* ======= END EXAMPLES ======= */
+
+@media screen and (min-width: 480px) {
+  .examples__photo {
+    width: 450px;
+    height: 294px;
+  }
+  .filters__btn:last-child {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1200px) {
+  .examples__photo {
+    width: 370px;
+    height: 294px;
+  }
+}

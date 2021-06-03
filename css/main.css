@@ -1051,7 +1051,8 @@ input {
 .filters {
   display: flex;
   justify-content: space-between;
-  width: 572px;
+  flex-wrap: wrap;
+  width: 100%;
   margin-bottom: 50px;
 }
 
@@ -1142,6 +1143,7 @@ input {
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .examples__item:hover, .examples__item:focus {
@@ -1157,4 +1159,20 @@ input {
 }
 
 /* ======= END EXAMPLES ======= */
+@media screen and (min-width: 480px) {
+  .examples__photo {
+    width: 450px;
+    height: 294px;
+  }
+  .filters__btn:last-child {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .examples__photo {
+    width: 370px;
+    height: 294px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
