@@ -1,5 +1,5 @@
 .container {
-  width: 100%;
+  // width: 100%;
   padding: 0 15px;
   // background-color: red;
   margin-left: auto;
@@ -53,6 +53,7 @@
   }
    .contact-us .container {     
     justify-content: space-between;
+    padding-top: 0;
    }
 }
 

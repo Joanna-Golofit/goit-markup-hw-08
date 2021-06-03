@@ -51,7 +51,6 @@ input {
 }
 
 .container {
-  width: 100%;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
@@ -103,16 +102,8 @@ input {
   }
   .contact-us .container {
     justify-content: space-between;
+    padding-top: 0;
   }
-}
-
-.hero.section {
-  padding-top: 118px;
-  padding-bottom: 118px;
-}
-
-.why-us.section {
-  padding-top: 60px;
 }
 
 .our-team.section {
@@ -124,12 +115,40 @@ input {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  .our-team.section {
+    padding-top: 60px;
+  }
+  .hero.section {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  .why-us.section {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .why-us.section {
+    padding-bottom: 0;
+  }
+  .our-customers.section {
+    padding-top: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .why-us.section {
+    padding-top: 94px;
+  }
+  .our-team.section {
+    padding-top: 94px;
+  }
+  .our-customers.section {
+    padding-top: 94px;
   }
 }
 
@@ -149,7 +168,6 @@ input {
 .logo--white {
   display: block;
   margin-bottom: 20px;
-  margin-top: 0px;
   color: #ffffff;
 }
 
@@ -164,6 +182,9 @@ input {
 @media screen and (min-width: 768px) {
   .logo {
     display: inline-block;
+  }
+  .logo.logo--white {
+    margin-top: 0;
   }
 }
 
@@ -639,7 +660,9 @@ input {
     width: 100%;
   }
   .article__header {
-    margin-left: 35vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -665,6 +688,7 @@ input {
   }
   .article__text {
     width: 270px;
+    margin-bottom: 0;
   }
   .article__icon {
     width: 270px;
@@ -731,6 +755,7 @@ input {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  align-items: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -742,7 +767,13 @@ input {
 }
 
 @media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .team__item {
+    margin-bottom: 30px;
     width: 354px;
   }
 }
@@ -750,6 +781,7 @@ input {
 @media screen and (min-width: 1200px) {
   .team__item {
     width: 270px;
+    margin-bottom: 0;
   }
 }
 
@@ -802,6 +834,7 @@ input {
 @media screen and (min-width: 1200px) {
   .customers__link {
     width: 170px;
+    margin-bottom: 0;
   }
 }
 
