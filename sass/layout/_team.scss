@@ -34,6 +34,10 @@
   .team__item {
     width: 450px;
   }
+  .team__photo {
+    width: 450px;
+    height: 460px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -46,6 +50,10 @@
     margin-bottom: 30px;
     width: 354px;
   }
+  .team__photo {
+    width: 354px;
+    height: 374px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -56,6 +64,10 @@
   .team__item {
     width: 270px;
     margin-bottom: 0;
+  }
+  .team__photo {
+    width: 270px;
+    height: 260px;
   }
 }
 

@@ -8,9 +8,7 @@
   .logo {
     display: block;
     margin: 15px 0;
-  }
-
-  
+  }  
   .btn-menu {
     position: absolute;
     // width: 24px;
@@ -22,6 +20,17 @@
     // border: 1px solid white;
     // border-radius: 50%;
     cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $blue-color;
+    }
+  }
+  .btn-menu__icon {
+    fill: currentColor;
   }
 }
 
