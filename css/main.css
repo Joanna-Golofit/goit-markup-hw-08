@@ -78,6 +78,9 @@ input {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .header .container {
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -135,6 +138,10 @@ input {
   .why-us.section {
     padding-top: 60px;
   }
+  .portfolio.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -147,6 +154,10 @@ input {
   }
   .our-customers.section {
     padding-top: 60px;
+  }
+  .portfolio.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -167,6 +178,10 @@ input {
   .hero.section {
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+  .portfolio.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1247,11 +1262,11 @@ input {
 /* ======= END EXAMPLES ======= */
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .examples__photo {
-    width: 450px;
+    width: 100%;
     height: 294px;
   }
   .examples__wrapper {
-    width: 450px;
+    max-width: 450px;
   }
   .filters__btn:last-child {
     margin-top: 15px;

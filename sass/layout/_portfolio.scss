@@ -109,11 +109,12 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
 // @media screen and (min-width: 480px) {
   .examples__photo {
-    width: 450px;
+    // width: 450px;
+    width: 100%;
     height: 294px;
   }
   .examples__wrapper {
-    width: 450px;
+    max-width: 450px;
   }
   .filters__btn:last-child {
     margin-top: 15px;
