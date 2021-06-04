@@ -166,7 +166,8 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
 // @media screen and (min-width: 480px) {
   .modal {
-    width: 450px;
+    // width: 450px;
+    width: 94%;
   }
   .modal-header {
   font-size: 20px;
@@ -178,7 +179,9 @@
   }
 }
 @media screen and (min-width: 768px) {
-
+  .modal {
+    width: 528px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {

@@ -571,7 +571,7 @@ input {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .modal {
-    width: 450px;
+    width: 94%;
   }
   .modal-header {
     font-size: 20px;
@@ -580,6 +580,12 @@ input {
   .form__declaration {
     font-size: 12px;
     line-height: 1.172;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
   }
 }
 
