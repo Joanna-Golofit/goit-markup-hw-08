@@ -20,45 +20,48 @@
     // position: absolute;
     // background-color: rgba(0, 0, 0, 0.2);
     background-color: white;
+    z-index: 5;
     width: 100%;
-    height: 100%;
+    height: 796px;
     left: 0;
     top: 0;
     position: fixed;
-    transition: 1500ms linear;
+    transition: 500ms linear;
   }
 
 
+  .menu-modal {
+    display: block;   
+    margin-top: 48px;
+  }
   .menu-modal__link {
     display: block;
+    color: $main-color;
+    // font: $main-font;
     text-decoration: none;
-    list-style: none;
-    // font-family: Roboto;
     font-size: 40px;
-    font-weight: 500;
     line-height: 1.175;
     letter-spacing: 0.02em;
     text-align: left;
-    color: #212121;
     margin-left: 32px;
+    
+  }
+  .menu-modal__item:not(:last-child) {
     margin-bottom: 32px;
   }
 
-  .menu-modal__link:hover {
-    color: var(--main-color);
+  .menu-modal__link:hover,
+  .menu-modal__link.current,
+  .menu-modal__link:focus {
+    color: $blue-color;
   }
 
-  .menu-modal {
-    display: block;
-    text-decoration: none;    
-    margin-top: 48px;
-  }
 
 
 
 .menu-modal-contacts {
   display: block;
-  margin-top: 270px;
+  margin-top: 306px;
 }
  .menu-modal-contacts__tel {
    display: block;
@@ -88,35 +91,49 @@
 
   .menu-modal-social {
     display: flex;
+    margin-left: 40px;
     // list-style: none;
     // font-family: Roboto;
     font-size: 18px;
     // font-style: normal;
-    font-weight: 500;
+    // font-weight: 500;
     line-height: 1.22;
     letter-spacing: 0.02em;
     // color: var(--main-color);
     margin-top: 64px;
   }
   .menu-modal-social__link {
-    margin-left: 40px;
+    // margin-left: 10px;
     text-decoration: none;
     // font-family: Roboto;
     font-size: 18px;
-    font-weight: 500;
+    // font-weight: 500;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $blue-color;
     margin-top: 64px;
   }
 
-  .menu-modal-social__link::before {
+  // .menu-modal-social__link::before {
+  //   content: "";
+  //   border: 1px solid rgba(33, 33, 33, 0.2);
+  //   transform: rotate(90deg);
+  //   margin-right: 10px;
+  // }
+  .menu-modal-social__item:not(:first-child)::before {
     content: "";
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
     margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .btn-close.mobile {
+    border: none;
+    border-radius: 0;
   }
 }
+
 
 
 @media screen and (min-width: 768px) {
