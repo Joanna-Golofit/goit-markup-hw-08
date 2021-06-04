@@ -1,5 +1,5 @@
 .container {
-  // width: 100%;
+  width: 100%;
   padding: 0 15px;
   // background-color: red;
   margin-left: auto;
@@ -17,7 +17,8 @@
   display: flex;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px){
+// @media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
   }

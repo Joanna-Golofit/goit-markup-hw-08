@@ -26,18 +26,18 @@
           <a class="logo" href="./index.html"
             ><span class="logo--accent">Web</span>Studio
           </a>
-<!-- 
+
           <button class="btn-menu" type="button" mobile-menu-open>
             <svg class="btn-menu__icon" width="24" height="16">
               <use href="./images/icons.svg#icon-menu_small"></use>            
             </svg>          
-          </button>  -->
+          </button> 
           
-          <a class="mobile-menu" href="./contacts.html">
+          <!-- <a class="mobile-menu" href="./contacts.html">
             <svg class="mobile-menu__icon" width="24" height="16">
               <use href="./images/icons.svg#icon-menu_small"></use>            
             </svg>          
-          </a> 
+          </a>  -->
 
           <ul class="menu">
             <li class="menu__item">
@@ -557,10 +557,56 @@
     </div>
     <!-- END Backdrop  -->
 
+    <!--   mobile-menu -->
+    <div class="container">
+      <div class="mobile-contacts is-hidden" mobile-menu>
+        <div class="mobile_modal">
+          <button class="btn-close" type="button" mobile-menu-close>
+            <svg class="btn-close__icon" width="11" height="11">
+              <use href="./images/icons.svg#icon-x"></use>
+            </svg>          
+          </button>
+          <ul class="menu-modal">
+            <li class="menu-modal__item">
+              <a class="menu-modal__link current" href="./index.html">Agencja</a>
+            </li>
+            <li class="menu-modal__item">
+              <a class="menu-modal__link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-modal__item">
+              <a class="menu-modal__link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        
+          <ul class="menu-modal-contacts">
+            <li class="menu-modal-contacts__item">
+              <a class="menu-modal-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="menu-modal-contacts__item">
+              <a class="menu-modal-contacts__link" href="tel:+48111111111">+48 111 111 111</a>
+            </li>
+          </ul>
+          <ul class="menu-modal-social">
+            <li class="menu-modal-social__item">
+              <a class="menu-modal-social__link" href="#">Instagram</a>
+            </li>
+            <li class="menu-modal-social__item">
+              <a class="menu-modal-social__link" href="#">Twitter</a>
+            </li>
+            <li class="menu-modal-social__item">
+              <a class="menu-modal-social__link" href="#">Facebook</a>
+            </li>
+            <li class="menu-modal-social__item">
+              <a class="menu-modal-social__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
 
