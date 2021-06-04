@@ -48,7 +48,7 @@
     display: flex;
     // width: 282px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-grow: 1;
   }
   .contacts {
@@ -58,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // flex-grow: 1;
+    flex-grow: 1;
   }
   .contacts {
     display: flex;
@@ -129,6 +129,11 @@
     justify-content: space-between;
     width: auto;
   }
+  .menu {
+    width: 254px;
+    flex-grow: unset;
+    justify-content: space-between;
+  }
   
   .contacts__link {
       font-size: 14px;
@@ -139,6 +144,11 @@
   }
   .contacts__item:first-child {
     margin-right: 50px;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
 

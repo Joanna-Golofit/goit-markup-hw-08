@@ -56,10 +56,14 @@
   .container {
     max-width: 1200px;
   }
-   .contact-us .container {     
-    justify-content: space-between;
-    padding-top: 0;
-   }
+  .contact-us .container {     
+  justify-content: space-between;
+  padding-top: 0;
+  }
+  // .header .container {
+  // display: flex;
+  // justify-content: space-around;
+  // }
 }
 
 // .container {
