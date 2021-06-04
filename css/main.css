@@ -1283,7 +1283,6 @@ input {
   display: flex;
   position: absolute;
   top: 0;
-  z-index: 1;
   background-color: rgba(33, 150, 243, 0.9);
   height: 294px;
   padding-left: 24px;
@@ -1294,7 +1293,6 @@ input {
 
 .examples__wrapper {
   position: relative;
-  z-index: 3;
   background-color: #ffffff;
   border: 1px solid #eee;
 }
