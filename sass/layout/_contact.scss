@@ -103,6 +103,11 @@ color: $white-color;
   .newsletter__email {
     width: 450px;
   }
+  .newsletter__label,
+  .address__item {
+    display: block;
+    text-align: center;
+  }
   .newsletter,
   .join-us {
     margin-top: 60px;
@@ -114,9 +119,17 @@ color: $white-color;
     flex-direction: column;
     // justify-content: center;
   }
-  // .newsletter {
-  //   margin-top: 60px;
-  // }
+   .newsletter__label,
+  .address__item {
+    display: block;
+    text-align: center;
+  }
+  .newsletter__email {
+    width: 450px;
+  }
+  .newsletter {
+    margin-top: 60px;
+  }
   .join-us {
     margin-top: 0px;
     margin-bottom: 0px;

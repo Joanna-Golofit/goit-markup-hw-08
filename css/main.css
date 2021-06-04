@@ -85,6 +85,10 @@ input {
     max-width: 768px;
   }
   .contact-us .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
   }
@@ -111,17 +115,22 @@ input {
   background-color: #f5f4fa;
 }
 
+.hero.section {
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+.our-team.section {
+  padding-top: 60px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .section {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .our-team.section {
+  .our-customers.section {
     padding-top: 60px;
-  }
-  .hero.section {
-    padding-top: 118px;
-    padding-bottom: 118px;
   }
   .why-us.section {
     padding-top: 60px;
@@ -130,7 +139,11 @@ input {
 
 @media screen and (min-width: 768px) {
   .why-us.section {
+    padding-top: 60px;
     padding-bottom: 0;
+  }
+  .our-team.section {
+    padding-bottom: 60px;
   }
   .our-customers.section {
     padding-top: 60px;
@@ -150,6 +163,10 @@ input {
   }
   .our-customers.section {
     padding-top: 94px;
+  }
+  .hero.section {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -186,6 +203,8 @@ input {
   }
   .logo.logo--white {
     margin-top: 0;
+    display: block;
+    text-align: center;
   }
 }
 
@@ -350,6 +369,9 @@ input {
     font-size: 28px;
     line-height: 1.172;
     margin-bottom: 30px;
+  }
+  .join-us__header {
+    text-align: center;
   }
 }
 
@@ -761,6 +783,7 @@ input {
   }
   .article__text {
     width: 354px;
+    margin-bottom: 45px;
   }
   .article__icon {
     width: 354px;
@@ -853,6 +876,7 @@ input {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .team__item {
     max-width: 450px;
+    margin-bottom: 30px;
   }
   .team__photo {
     object-fit: cover;
@@ -929,6 +953,9 @@ input {
 }
 
 @media screen and (min-width: 768px) {
+  .customers {
+    justify-content: space-between;
+  }
   .customers__link {
     width: 226px;
   }
@@ -1051,6 +1078,11 @@ input {
   .newsletter__email {
     width: 450px;
   }
+  .newsletter__label,
+  .address__item {
+    display: block;
+    text-align: center;
+  }
   .newsletter,
   .join-us {
     margin-top: 60px;
@@ -1061,6 +1093,17 @@ input {
   .newsletter__wrapper {
     display: flex;
     flex-direction: column;
+  }
+  .newsletter__label,
+  .address__item {
+    display: block;
+    text-align: center;
+  }
+  .newsletter__email {
+    width: 450px;
+  }
+  .newsletter {
+    margin-top: 60px;
   }
   .join-us {
     margin-top: 0px;

@@ -1,6 +1,12 @@
-
 .our-team.section {
   background-color: $background-color-gray;
+}
+.hero.section {
+    padding-top: 118px;
+    padding-bottom: 118px;  
+}
+.our-team.section {
+    padding-top: 60px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -8,13 +14,9 @@
   .section {
     padding-top: 30px;
     padding-bottom: 30px;  
-  }  
-  .our-team.section {
+  }    
+  .our-customers.section {
     padding-top: 60px;
-  }
-  .hero.section {
-    padding-top: 118px;
-    padding-bottom: 118px;  
   }
   .why-us.section {
     padding-top: 60px;  
@@ -22,7 +24,11 @@
 }
 @media screen and (min-width: 768px) {
   .why-us.section {
+    padding-top: 60px;
     padding-bottom: 0;
+  }
+   .our-team.section {
+    padding-bottom: 60px;
   }
   .our-customers.section {
     padding-top: 60px;
@@ -41,6 +47,10 @@
   }
   .our-customers.section {
     padding-top: 94px;
+  }
+  .hero.section {
+    padding-top: 200px;
+    padding-bottom: 200px;  
   }
   // .portfolio.section {
 
