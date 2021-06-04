@@ -2,8 +2,8 @@
 //     color: $main-color;
 //   }
 
-// @media screen and (min-width: 320px) and (max-width: 767px) {
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+// @media screen and (min-width: 480px) {
   .menu {
     display: none;
   }
@@ -46,8 +46,9 @@
   }
   .menu {
     display: flex;
+    // width: 282px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-grow: 1;
   }
   .contacts {
@@ -57,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-grow: 1;
+    // flex-grow: 1;
   }
   .contacts {
     display: flex;

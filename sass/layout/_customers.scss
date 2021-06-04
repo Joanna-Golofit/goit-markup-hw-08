@@ -1,13 +1,16 @@
 .customers {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .customers__icon {
   width: 106px;
   height: 60px;
   fill: currentColor;
 }
-.customers__link {
+.customers__link {   
+  width: 210px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,15 +30,13 @@
   }
 }
 
-// @media screen and (min-width: 320px) and (max-width: 767px) {
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+// @media screen and (min-width: 480px) {
   .customers {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
-  .customers__link { 
-    width: 210px;
-    margin-bottom: 30px;
-  }
+  
   
 }
 @media screen and (min-width: 768px) {
