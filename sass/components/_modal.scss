@@ -163,7 +163,7 @@
   pointer-events: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px){
   .modal {
     width: 450px;
   }

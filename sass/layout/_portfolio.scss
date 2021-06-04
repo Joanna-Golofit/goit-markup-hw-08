@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  // width: 572px;
-  width: 100%;
+  // width: 100%;
   margin-bottom: 50px;
 }
 .filters__btn {
@@ -55,6 +54,8 @@
 }
 .examples__wrapper {
   position: relative;
+  // height: 101%;
+  // flex-grow: 1;
   z-index: 3;
   background-color: $white-color;
   border: 1px solid #eee;
@@ -68,6 +69,7 @@
 }
 .examples__title {
   padding-left: 24px;
+  padding-right: 24px;
   padding-bottom: 4px;
   padding-top: 20px;
   font-weight: 700;
@@ -88,7 +90,7 @@
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
-  width: 100%;
+  // width: 100%;
 
   &:hover,
   &:focus {
@@ -98,29 +100,64 @@
   &:hover .examples__overlay {
     transform: translateY(0);
   }
-  &:nth-child(n + 7) {
-    margin-bottom: 0;
-  }
+  
 }
 
 
 /* ======= END EXAMPLES ======= */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px){
   .examples__photo {
     width: 450px;
     height: 294px;
+  }
+  .examples__wrapper {
+    width: 450px;
   }
   .filters__btn:last-child {
     margin-top: 15px;
   }
 }
 @media screen and (min-width: 768px) {
+  .examples__photo {
+    width: 354px;
+    height: 294px;
+  }
+  .examples__item:first-child {
+    height: 100%;
+  }
+  // przez karte obok z zawinietym tekstem overlay wystawal od spodu
+  .examples__item:first-child .examples__category{
+    margin-bottom: 35px;
+  }
+  .examples__wrapper {
+    width: 354px;
 
+    // &:first-of-type {      
+    //   height: 100%;
+    // }
+  }
+  .filters {  
+    width: 645px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   .examples__photo {
     width: 370px;
     height: 294px;
+  }
+  .examples__wrapper {
+    width: 370px;
+  }
+  .examples__item:nth-child(n + 7) {
+    margin-bottom: 0;
+  }
+  .examples__item:first-child .examples__category{
+    margin-bottom: 0;
+  }
+  .filters {  
+   width: 572px;  
   }
 }
